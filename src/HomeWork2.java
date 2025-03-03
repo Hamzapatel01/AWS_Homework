@@ -13,7 +13,7 @@ public class HomeWork2 {
         try
         {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con=DriverManager.getConnection("jdbc:mysql://itclub.cgofsekjc56k.us-east-1.rds.amazonaws.com:3306/WrightDB", "HamzaPatel01", "Itshmzpl01");
+            Connection con=DriverManager.getConnection("jdbc:mysql://itclub.cgofsekjc56k.us-east-1.rds.amazonaws.com:3306/WrightDB", "HamzaPatel01", "PASSWORD");
             Statement stmt=con.createStatement();
            
             rs=stmt.executeQuery("select * from employees");
